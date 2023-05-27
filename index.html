@@ -7,6 +7,14 @@
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <title>Razorpay</title>
     <link rel="stylesheet" href="./main.css">
+    <script>
+        import {
+            Carousel,
+            initTE,
+            } from "tw-elements";
+
+            initTE({ Carousel });
+    </script>
     
     <script src="https://unpkg.com/feather-icons"></script>
 
@@ -683,9 +691,7 @@
 
     <section class="relative">
         
-        <div class="w-11/12 max-w-[1300px] mx-auto relative py-20" >
-
-
+        <div class="w-11/12 max-w-[1300px] mx-auto relative py-20">
             <img class="absolute w-[200px] top-[8rem] left-[2rem] -z-10" src="./web_images/feature-section1-dottedrows.png" alt="">
             <h2 class="font-mullish font-extrabold text-2xl leading-7 text-deepBlue text-center">An Experience
                <br> People Love to Talk About
@@ -693,6 +699,16 @@
             <div class="w-6 h-1 bg-greenLight mx-auto my-5"></div>
             
             <!-- left button -->
+            <button
+                class="absolute w-[100px] h-[100px] bg-[#f4f8ff] rounded-full left-0 top-1/2 flex items-center justify-center ">
+                <div class="relative w-[65%] h-[65%] bg-[#f4f8ff] rounded-full flex items-center justify-center mix-blend-multiply">
+                    <i data-feather="chevron-left"
+                    class="stroke-[5px] w-6 h-6 md:h-10 text-gray-400">
+                    </i>
+                </div>
+            </button>
+            
+            <!-- right button  -->
             <button class="absolute w-[100px] h-[100px] bg-[#f4f8ff] rounded-full right-0 top-1/2 flex items-center justify-center">
                 <div class="relative w-[65%] h-[65%] bg-[#f4f8ff] rounded-full flex items-center justify-center mix-blend-multiply">
                     <i data-feather="chevron-right"
@@ -701,30 +717,40 @@
                 </div>
             </button>
             
-            <!-- right button -->
-            <button class="absolute w-[100px] h-[100px] bg-[#f4f8ff] rounded-full left-0 top-1/2 flex items-center justify-center">
-                <div class="relative w-[65%] h-[65%] bg-[#f4f8ff] rounded-full flex items-center justify-center mix-blend-multiply">
-                    <i data-feather="chevron-left"
-                    class="stroke-[5px] w-6 h-6 md:h-10 text-gray-400">
-                    </i>
-                </div>
-            </button>
-            
             <!-- main content -->
-            <div class="flex flex-row  max-w-[960px] items-center mx-auto my-20 space-x-[10rem]">
-                <!-- left image -->
-                <img class=" h-[320px] w-[320px] rounded-xl" loading="lazy" src="./web_images/testimonial.jpg" alt="">
-                
-                <!-- right part -->
-                <div class="max-w-[400px] ">
-                    <img class="w-[35px] h-[40px] -mb-2" loading="lazy" src="./web_images/quotes.svg" alt="">
-                    <p class="text-3xl leading-[3rem] font-[200]">Acquire Customers From New Customer Segments</p>
-                    <a class="text-grayText italic underline" href="">Learn More</a>
-                    <h3 class="font-mullish font-[900] text-2xl">Subham Kumar</h3>
-                    <p class="font-mullish font-medium">Product Manager</p>
-                    <img class="w-[80px] h-[40px] " loading="lazy" src="./web_images/fake-company-logo.png" alt="">
+                <div class="flex flex-row  max-w-[960px] items-center mx-auto my-20 space-x-[10rem] transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none">
+                    <!-- item1 -->
+                    <div>
+                        <!-- left image -->
+                            <img class=" h-[320px] w-[320px] rounded-xl" loading="lazy" src="./web_images/testimonial.jpg" alt="">
+                            
+                            <!-- right part -->
+                            <div class="max-w-[400px] ">
+                                <img class="w-[35px] h-[40px] -mb-2" loading="lazy" src="./web_images/quotes.svg" alt="">
+                                <p class="text-3xl leading-[3rem] font-[200]">Acquire Customers From New Customer Segments</p>
+                                <a class="text-grayText italic underline" href="">Learn More</a>
+                                <h3 class="font-mullish font-[900] text-2xl">Subham Kumar</h3>
+                                <p class="font-mullish font-medium">Product Manager</p>
+                                <img class="w-[80px] h-[40px] " loading="lazy" src="./web_images/fake-company-logo.png" alt="">
+                            </div>
+                    </div>
+                    <!-- item2 -->
+                    <div>
+                        <!-- left image -->
+                            <img class=" h-[320px] w-[320px] rounded-xl" loading="lazy" src="./web_images/testimonial.jpg" alt="">
+                            
+                            <!-- right part -->
+                            <div class="max-w-[400px] ">
+                                <img class="w-[35px] h-[40px] -mb-2" loading="lazy" src="./web_images/quotes.svg" alt="">
+                                <p class="text-3xl leading-[3rem] font-[200]">Acquire Customers From New Customer Segments</p>
+                                <a class="text-grayText italic underline" href="">Learn More</a>
+                                <h3 class="font-mullish font-[900] text-2xl">Subham Kumar</h3>
+                                <p class="font-mullish font-medium">Product Manager</p>
+                                <img class="w-[80px] h-[40px] " loading="lazy" src="./web_images/fake-company-logo.png" alt="">
+                            </div>
+                    </div>
                 </div>
-            </div>
+            
             
             <!-- transition div -->
             <ol class="flex flex-row mx-auto space-x-2  justify-center" >
@@ -735,10 +761,10 @@
                 <li class="h-2 w-2 bg-gray-400 rounded-full"></li>
                 <li class="h-2 w-2 bg-gray-400 rounded-full"></li>
                 <li class="h-2 w-2 bg-gray-400 rounded-full"></li>
-
             </ol>
         </div>
     </section>
+    
     
 
     
